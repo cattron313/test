@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Learning how to divest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Coda&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/styles.css"></link>
+    </head>
+    <body>
+        <nav class="site">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>{{ pageTitle }}</h2>
+            <h3 class="full date">{{ page.date | date: "%B %e, %Y" }}</h3>
+            {{ content }}
+        </article>
+    </body>
+</html>

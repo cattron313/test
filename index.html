@@ -1,1 +1,14 @@
-<h1>Hello World!</h1>
+---
+layout: home.liquid
+---
+<main class="home">
+    {% for post in collections.post %}
+        <a class="blogPost-snippet" href="{{ post.url }}" data-imgSrc-sm="{{ post.data.smImg }}" data-imgSrc-md="{{ post.data.mdImg }}" data-imgSrc-fz="{{ post.data.fzImg }}">
+            <p class="full date">{{ post.date | date: "%e %B %Y" }}</p>
+            <p class="short date">{{ post.date | date: "%b %Y" }}</p>
+            <h1>{{ post.data.pageTitle }}</h1>
+            <p>{{ post.data.lead }}</p>
+        </a>
+    {% endfor %}
+</main>
+<script src="/assets/js/main.js"></script>

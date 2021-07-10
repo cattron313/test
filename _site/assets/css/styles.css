@@ -1,0 +1,230 @@
+/* CSS RESET from https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
+
+html, body {
+	height: 100%;
+}
+/* END CSS RESET */
+
+body {
+	margin: 0 1rem 0 1rem;
+	background-color: #1A1F21;
+}
+
+p, li, a {
+	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+	font-size: 1.15rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Coda', cursive;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+a {
+	font-family: 'Coda', cursive;
+	color: #8BEE86;
+}
+
+a:visited {
+	color: lightgray;
+}
+
+a:focus {
+	box-shadow: 1px 1px 50px #50E743;
+}
+
+h1 {
+	color: #EDF8F7;
+	-webkit-text-stroke: 1px #50E743;
+	text-shadow: -1px -1px 1px #277920, 1px -1px 1px #277920, -1px 1px 1px #277920, 1px 1px 1px #277920;
+	position: relative;
+	top: -1rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+	color: #8BEE86;
+	-webkit-text-stroke: 1px #50E743;
+}
+
+h3 {
+	color: #B8E9B5;
+}
+
+ul, ol {
+	margin-left: 2rem;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+nav.site {
+	margin: 1.5rem 0 2rem 0;
+}
+
+nav.site ul, nav.site ol {
+	display: flex;
+	justify-content: space-around;
+}
+
+.blogPost-snippet {
+	border-top: 1px solid #8ce485;
+	border-left: 1px solid #8ce485;
+	text-decoration: none;
+	height: 14rem;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-image:
+		linear-gradient(rgba(26, 31, 33, 0.55), rgba(26, 31, 33, 0.55)),
+		url('/assets/img/posts/0001-intro/Computer-640x427.jpg');
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+article h3, p.date {
+	font-family: 'Coda', cursive;
+	font-size: 1.2rem;
+}
+
+.blogPost-snippet p.date {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+}
+
+.blogPost-snippet p.full.date {
+	display: none;
+}
+
+.blogPost-snippet p.short.date {
+	text-transform: uppercase;
+}
+
+.blogPost-snippet h1 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+main.about {
+	margin-top: 5rem;
+}
+
+main.about h1 {
+	font-size: 3rem;
+}
+
+main.about p, article p {
+	margin: 1rem 0;
+}
+
+article h3:last-of-type {
+	margin-bottom: 3rem;
+}
+
+/* TABLETS */
+@media screen and (min-width: 600px) {
+	h1 {
+		font-size: 2.5rem;
+		-webkit-text-stroke: 2px #50E743;
+	}
+
+	main.home {
+		margin: 0 5%;
+	}
+
+	.blogPost-snippet {
+		border-right: 1px outset hsl(197, 12%, 10%);
+		border-left: 1px inset hsl(197, 12%, 11%);
+		border-top: 3px outset #8be485;
+		margin-bottom: 1rem;
+	}
+
+	.blogPost-snippet p {
+		font-size: 1.25rem;
+		margin: 0;
+	}
+
+	.blogPost-snippet p.date {
+		font-size: 1.1rem;
+	}
+
+	main.about {
+		margin: 4rem 2rem;
+	}
+
+	main.about h1 {
+		text-align: center;
+	}
+
+	main.about p {
+		margin: 0.5rem 0 1rem 0;
+	}
+
+	main.about p, main.about li, article p, article li {
+		font-size: 0.8rem;
+	}
+
+	article {
+		margin: 0 2rem;
+	}
+
+	article h2 {
+		margin-top: 3rem;
+	}
+
+	article a {
+		font-size: 1.3rem;
+	}
+}
+
+/* BIG HI-RES SCREENS */
+@media only screen and (min-width: 1200px) {
+	main.home {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.blogPost-snippet {
+		width: 67%;
+	}
+	.blogPost-snippet p.short.date {
+		display: none;
+	}
+
+	.blogPost-snippet p.full.date {
+		display: block;
+	}
+
+	main.about, article  {
+		margin: 0 15%;
+	}
+
+	main.about p, main.about li, article p, article li {
+		font-size: 1.2rem;
+	}
+
+	article a {
+		font-size: 1.1rem;
+	}
+}
