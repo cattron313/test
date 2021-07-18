@@ -1,5 +1,6 @@
 ---
 pageTitle: Init Blog
+date: 2021-07-09 18:00:00-08:00
 lead: Idk how you found your way here&mldr;
 tags: ['post']
 smImg: /assets/img/posts/0001-intro/Computer-640x427.jpg

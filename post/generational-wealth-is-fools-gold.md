@@ -1,5 +1,6 @@
 ---
 pageTitle: Generational Wealth is Fool's Gold
+date: 2021-07-18 15:00:00-08:00
 lead: Let's focus on what will actually get us free
 tags: ['post']
 smImg: /assets/img/posts/0002-gwfg/pyrite-640.jpg
