@@ -24,19 +24,31 @@ body {
 
 p, li, a {
 	font-family: 'Montserrat', sans-serif;
-	color: #FFFFFF;
 	font-size: 1.15rem;
+}
+
+p, li {
+	color: #EDF8F7;
+}
+
+a {
+	color: #8BEE86;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Coda', cursive;
 }
 
+hr {
+	height: 1px;
+	background-color: #EDF8F7;
+}
+
 nav li {
 	list-style-type: none;
 }
 
-a {
+nav a {
 	font-family: 'Coda', cursive;
 	color: #8BEE86;
 }
@@ -46,15 +58,13 @@ a:visited {
 }
 
 a:focus {
-	box-shadow: 1px 1px 50px #50E743;
+	box-shadow: 0px 0px 50px #50E743;
 }
 
 h1 {
 	color: #EDF8F7;
 	-webkit-text-stroke: 1px #50E743;
 	text-shadow: -1px -1px 1px #277920, 1px -1px 1px #277920, -1px 1px 1px #277920, 1px 1px 1px #277920;
-	position: relative;
-	top: -1rem;
 }
 
 h2 {
@@ -97,9 +107,9 @@ nav.site ul, nav.site ol {
 		url('/assets/img/posts/0001-intro/Computer-640x427.jpg');
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	margin-bottom: 2rem;
+	padding: 1rem;
 }
 
 article h3, p.date {
@@ -107,10 +117,8 @@ article h3, p.date {
 	font-size: 1.2rem;
 }
 
-.blogPost-snippet p.date {
-	position: absolute;
-	left: 1rem;
-	top: 1rem;
+article p {
+	line-height: 1.6;
 }
 
 .blogPost-snippet p.full.date {
@@ -122,8 +130,8 @@ article h3, p.date {
 }
 
 .blogPost-snippet h1 {
-	text-align: center;
 	font-size: 2rem;
+	margin: 1rem 0;
 }
 
 main.about {
@@ -135,11 +143,15 @@ main.about h1 {
 }
 
 main.about p, article p {
-	margin: 1rem 0;
+	margin: 2rem 0;
 }
 
 article h3:last-of-type {
 	margin-bottom: 3rem;
+}
+
+article, main.about {
+	padding-bottom: 1rem;
 }
 
 /* TABLETS */
@@ -160,13 +172,27 @@ article h3:last-of-type {
 		margin-bottom: 1rem;
 	}
 
+	.blogPost-snippet:hover {
+		box-shadow: 0px 0px 30px #51e74323;
+	}
+
 	.blogPost-snippet p {
 		font-size: 1.25rem;
 		margin: 0;
 	}
 
+	.blogPost-snippet .lead {
+		text-align: center;
+	}
+
 	.blogPost-snippet p.date {
 		font-size: 1.1rem;
+		position: absolute;
+		top: 1rem;
+	}
+
+	.blogPost-snippet h1 {
+		text-align: center;
 	}
 
 	main.about {
@@ -181,20 +207,12 @@ article h3:last-of-type {
 		margin: 0.5rem 0 1rem 0;
 	}
 
-	main.about p, main.about li, article p, article li {
-		font-size: 0.8rem;
-	}
-
 	article {
 		margin: 0 2rem;
 	}
 
 	article h2 {
 		margin-top: 3rem;
-	}
-
-	article a {
-		font-size: 1.3rem;
 	}
 }
 

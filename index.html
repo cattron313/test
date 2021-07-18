@@ -7,7 +7,7 @@ layout: home.liquid
             <p class="full date">{{ post.date | date: "%e %B %Y" }}</p>
             <p class="short date">{{ post.date | date: "%b %Y" }}</p>
             <h1>{{ post.data.pageTitle }}</h1>
-            <p>{{ post.data.lead }}</p>
+            <p class="lead">{{ post.data.lead }}</p>
         </a>
     {% endfor %}
 </main>
